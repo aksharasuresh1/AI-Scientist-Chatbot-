@@ -5,13 +5,10 @@ import time
 
 # --- Gemini API Configuration ---
 
-# Try to get the API key from Streamlit's secrets
-try:
-    API_KEY = st.secrets["GEMINI_API_KEY"]
-except KeyError:
-    API_KEY = "AIzaSyAVfcN5ZRPXF9RVDqmTJRyyLCa5Y_YVae4" # If not found, set to empty string
 
-API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key={API_KEY}"
+    API_KEY = "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" # If not found, set to empty string
+
+API_URL = f"https://api.openai.com/v1/responses"
 
 # The system prompt that defines Kelly's persona and response style.
 SYSTEM_INSTRUCTION = {
