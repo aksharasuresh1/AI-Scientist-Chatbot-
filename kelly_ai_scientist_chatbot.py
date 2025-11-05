@@ -6,7 +6,7 @@ import time
 # --- Gemini API Configuration ---
 
 
-    API_KEY = "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" # If not found, set to empty string
+API_KEY = "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" # If not found, set to empty string
 
 API_URL = f"https://api.openai.com/v1/responses"
 
